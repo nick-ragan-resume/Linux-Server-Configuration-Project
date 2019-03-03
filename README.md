@@ -95,18 +95,17 @@
 <li><p>Installing all packages</p></li>
 <code>sudo apt-get install libapache2-mod-wsgi python-dev</code>
 <code>sudo apt-get install apache2</code>
-</ul>
-<p>Once installed, Enable mod_wsgi</p>
+<li><p>Once installed, Enable mod_wsgi</p></li>
 <code>sudo a2enmod wsgi</code>
-<p>Now you can start the webserver</p>
+<li><p>Now you can start the webserver</p></li>
 <code>sudo service apache2 start</code>
-<p>Now go to the public ip your application is hosted on and you should see an Apache2 Ubuntu Default Page that says It works!</p>
-
+<li><p>Now go to the public ip your application is hosted on and you should see an Apache2 Ubuntu Default Page that says It works!</p></li>
+</ul>
 
 <h3>Install Git To Clone Application</h3>
-<p>You will need to check to see if Git is installed</p>
+<li><p>You will need to check to see if Git is installed</p></li>
 <code>which git</code>
-<p>If git is not installed run the following command</p>
+<li><p>If git is not installed run the following command</p></li>
 <code>sudo apt-get install git</clone>
 
 
