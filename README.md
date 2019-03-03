@@ -38,7 +38,7 @@
 </pre>
 <ul>
 <li><p>This key should be stored in the following directory <code>Users/ragan/.ssh/authorized_keys</code> on your local machine</p></li>
-<li><p>We need to copy the private key from the <b>local machine</b> to your user <b>grader</b> on the digital ocean server by running <code>ssh-copy-id grader@<your_public_ip_digital_ocean></code></p></li>
+<li><p>We need to copy the private key from the <b>local machine</b> to your user <b>grader</b> on the digital ocean server by running <code>ssh-copy-id grader@(your_public_ip_digital_ocean)</code></p></li>
 <li><p>You can now log in as the user <b>grader</b> from your local machine</p></li>
 </ul>
 <pre>
