@@ -108,7 +108,7 @@
 <code>which git</code>
 <li><p>If git is not installed run the following command</p></li>
 <code>sudo apt-get install git</code>
-<li><p>Clone your app in the following directory <code>cd /var/www/catalog<p></li>
+<li><p>Clone your app in the following directory <code>cd /var/www/catalog</p></li>
 <li><p>Steps to do this</p></li>
 <p><code>cd /var/www</code></p>
 <p><code>sudo mkdir catalog</code></p>
