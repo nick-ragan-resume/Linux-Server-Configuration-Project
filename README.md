@@ -16,7 +16,7 @@
 <li>Click on the newly create droplet</li>
 <li>Click on console</li>
 <li>Login to server with username/password sent to your email associated with your digital ocean accout</li>
-<p>--Above step will log you in as the root user. We will want to create at least one new user named <b>grader</b>. See below--
+<p>--Above step will log you in as the root user. We will want to create at least one new user named <b>grader</b>. See below--</p>
 <code>sudo adduser grader</code>
 </ul>
 <ul>
@@ -29,22 +29,16 @@
 <h3>SSH Key Authentication</h3>
 <ul>
 <li><p>From terminal on local machine type:</p></li>
-<pre>
 <code>ssh-keygen</code>
-</pre>
 </ul>
 <ul>
 <li><p>This key should be stored in the following directory <code>Users/ragan/.ssh/authorized_keys</code> on your local machine</p></li>
 <li><p>We need to copy the private key from the <b>local machine</b> to your user <b>grader</b> on the digital ocean server by running <code>ssh-copy-id grader@(your_public_ip_digital_ocean)</code></p></li>
 <li><p>Set Permissions both .ssh file locations</p></li>
-<pre>
 <code>chmod 700 .ssh</code>
 <code>chmod 644 .ssh/authorized_keys</code>
-</pre>
 <li><p>You can now log in as the user <b>grader</b> from your local machine</p></li>
-<pre>
 <code>ssh grader@(your_public_ip_digital_ocean)</code>
-</pre>
 </ul>
 
 
@@ -62,22 +56,23 @@
 <h3>Changing SSH Port To 2200</h3>
 <ul>
 <li><p>Edit the sshd_config file</p></li>
-<pre>
 <code>sudo nano /etc/ssh/sshd_config</code>
-</pre>
 <li><p>Change <b>#Port 22</b> to <b>Port 2200</b></p></li>
 </ul>
+
+
 
 <h3>Disable Root Login & Password Authentication</h3>
 <ul>
 <li><p>These settings will be in the sshd_config file also<p></li>
 <code>sudo nanno /etc/ssh/sshd_config</code>
 <p>Find and disable the following lines by setting to no</p>
-<pre>
 <code>PermitRootLogin no</code>
 <code>PasswordAuthentication no</code>
-</pre>
 </ul>
+
+
+
 
 <h3>Securing Server & Configuring Firewall</h3>
 <ul>
@@ -95,9 +90,7 @@
 
 <h3>Deploying Application</h3>
 <p>........... </p>
-<pre>
 <code>.........</code>
-</pre>
 
 
 <h3>Setting Up PostgreSQL Database</h3>
