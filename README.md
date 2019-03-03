@@ -146,6 +146,7 @@
 
 </br></br>
 <h3>Install All Remaining Packages Required</h3>
+<ul>
 <pre>
 <code>sudo pip install Flask</code>
 <code>sudo pip install sqlalchemy</code>
@@ -157,6 +158,8 @@
 <code>sudo pip install oauth2client</code>
 <code>sudo pip install oauth2client</code>
 </pre>
+</ul>
+
 
 </br></br>
 <h3>Setting Up PostgreSQL Database</h3>
