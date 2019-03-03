@@ -71,14 +71,21 @@
 <li><p>Change <b>#Port 22</b> to <b>Port 2200</b></p></li>
 </ul>
 
-
+<h3>Disable Root Login & Password Authentication</h3>
+<ul>
+<li><p>These settings will be in the sshd_config file also<p></li>
+</ul>
+<code>sudo nanno /etc/ssh/sshd_config</code>
+<p>Find and disable the following lines by setting to no</p>
+<code>PermitRootLogin no</code>
+<code>PasswordAuthentication no</code>
 
 
 
 <h3>Securing Server & Configuring Firewall</h3>
 <ul>
 <li><p>Log in as the user <b>grader</b></p></li>
-<li><p>Perform the steps below in order</p></li>
+<li><p>Perform the steps below</p></li>
 </ul>
 <code>sudo ufw app list</code><p> Lists out profiles to further explore their profile definitions</p>
 <code>sudo ufw allow OpenSSH</code><p> Allows open SSH connection</p>
