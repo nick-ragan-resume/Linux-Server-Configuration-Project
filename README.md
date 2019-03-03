@@ -188,7 +188,50 @@
 
 </br></br>
 <h3>Setting Up PostgreSQL Database</h3>
+<ul>
+<li><p>Install the required packages for PostgreSQL</p></li>
+<p><code>sudo apt-get libpq-dev python-dev</code><p>
+<p><code>sudo apt-get install postgresql postgresql-contrib</code><p>
+<li><p>Switch to the postgres database</p></li>
+<p><code>sudo su - postgres</code><p>
+<li><p>Create database user and database</p></li>
+<p><code>CREATE USER catalog WITH PASSWORD catalog;</code><p>
+<p><code>ALTER USER catalog CREATEDB;</code><p>
+<p><code>CREATE DATABASE catalog WITH OWNER catalog;</code><p>
+<li><p>Login to the newly created <b>catalog</b> database</p></li>
+<p><code>\c catalog</code><p>
+<p><code>REVOKE ALL ON SCHEMA public FROM public;</code><p>
+<p><code>GRANT ALL ON SCHEMA public TO catalog;</code><p>
+<li><p>Now exit out of database</p></li>
+<p><code>\q</code><p>
+<p><code>exit</code><p>
+<li><p>Now change the engine in your __init__.py and database_setup.py files</p></li>
+<p><code>engine = create_engine('postgresql://catalog:(Your_Password)@localhost/catalog</code></p>
+<li><p>Once finished restart your Apache Server</p></li>
+<p><code>sudo service apache2 restart</code></p>
+</ul>
 
+<h3>Changign DNS Host from DREAMHOST tO DIGITAL OCEAN</h3>
+<ul>
+<li><p>Dream hosts DNS Servers are</p></li>
+<pre>
+<code>
+ns1.dreamhost.com
+ns2.dreamhost.com
+ns3.dreamhost.com
+</code>
+</prev>
+<li><p>Digital Oceans DNS Servers are</p></li>
+<pre>
+<code>
+ns1.digitalocean.com
+ns2.digitalocean.com
+ns3.digitalocean.com
+</code>
+</prev>
+<li><p>Once finished it may take some time for the WHOIS records to update the server change</p></li>
+<li><p>Once updated, visit <a href="hiodevelopment.com">hiodevelopment.com</a> to see this application</p></li>
+</ul>
 
 </br></br>
 <h3>References</h3>
