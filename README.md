@@ -220,7 +220,7 @@ ns1.dreamhost.com
 ns2.dreamhost.com
 ns3.dreamhost.com
 </code>
-</prev>
+</pre>
 <li><p>Digital Oceans DNS Servers are</p></li>
 <pre>
 <code>
@@ -228,7 +228,7 @@ ns1.digitalocean.com
 ns2.digitalocean.com
 ns3.digitalocean.com
 </code>
-</prev>
+</pre>
 <li><p>Once finished it may take some time for the WHOIS records to update the server change</p></li>
 <li><p>Once updated, visit <a href="http://hiodevelopment.com/">hiodevelopment.com</a> to see this application</p></li>
 </ul>
