@@ -90,31 +90,6 @@
 
 
 </br></br>
-<h3>Deploying Application</h3>
-<p>To host our application we will use <b>Virtualenv</b> and <b>Apache2</b></p>
-<ul>
-<li><p>Installing all packages</p></li>
-<code>sudo apt-get install libapache2-mod-wsgi python-dev</code>
-<code>sudo apt-get install apache2</code>
-<li><p>Once installed, Enable mod_wsgi</p></li>
-<code>sudo a2enmod wsgi</code>
-<li><p>Now you can start the webserver</p></li>
-<code>sudo service apache2 start</code>
-<li><p>Now go to the public ip your application is hosted on and you should see an Apache2 Ubuntu Default Page that says It works!</p></li>
-<li><p>Create a .wsgi file in the following directory <code>/var/www/catalog</code></p></li>
-<p><code>sudo nano catalog.wsgi</code></p>
-<pre>
-<code>import sys</code>
-<code>import logging</code>
-<code>logging.basicConfig(stream=sys.stderr)</code>
-</br>
-<code>from catalog import app as application</code>
-<code>application.secret_key = 'supersecretkey'
-  </pre>
-</ul>
-
-
-</br></br>
 <h3>Install Git To Clone Application</h3>
 <ul>
 <li><p>You will need to check to see if Git is installed</p></li>
@@ -131,6 +106,42 @@
 <code>git clone (clone url link) catalog</code>
 <li><p>Your directory should look like this after cloning <code>/var/www/catalog/catalog</code></p></li>  
 </ul>
+
+
+</br></br>
+<h3>Deploying Application</h3>
+<p>To host our application we will use <b>Apache2</b></p>
+<ul>
+<li><p>Installing all packages for Apache2</p></li>
+<code>sudo apt-get install libapache2-mod-wsgi python-dev</code>
+<code>sudo apt-get install apache2</code>
+<li><p>Once installed, Enable mod_wsgi</p></li>
+<code>sudo a2enmod wsgi</code>
+<li><p>Now you can start the webserver</p></li>
+<code>sudo service apache2 start</code>
+<li><p>Now go to the public ip your application is hosted on and you should see an Apache2 Ubuntu Default Page that says It works!</p></li>
+<li><p>Create a .wsgi file in the following directory <code>/var/www/catalog</code></p></li>
+<p><code>sudo nano catalog.wsgi</code></p>
+<pre>
+<code>import sys</code>
+<code>import logging</code>
+<code>logging.basicConfig(stream=sys.stderr)</code>
+</br>
+<code>from catalog import app as application</code>
+<code>application.secret_key = 'supersecretkey'</code>
+</pre>
+<li><p>Rename your <code>application.py</code> to <code>__init__.py</code></p></li>
+<li><p>Now we will need to install the virtual machine <b>Virtualenv</b></p></li>
+<p><code>sudo pip install virtualenv</code></p>
+<p><code>sudo virtualenv venv</code></p>
+<p><code>source venv/bin/activate</code></p>
+<p><code>sudo chmod -R 777 venv</code></p>
+<li><p>Once activated <code>(venv)</code> should appear infront of your username on the command line</p></li>
+
+</ul>
+
+
+
 
 
 </br></br>
