@@ -141,9 +141,7 @@
 <li><p>Enable the virtual host</p></li>
 <p><code>sudo nano /etc/apache2/sites-available/catalog.conf</code></p>
 <pre>
-<code>
-"
-<VirtualHost *:80>
+<code>"<VirtualHost *:80>
     ServerName [YOUR PUBLIC IP ADDRESS]
     ServerAlias [YOUR AMAZON LIGHTSAIL HOST NAME]
     ServerAdmin admin@35.167.27.204
@@ -162,8 +160,7 @@
     ErrorLog ${APACHE_LOG_DIR}/error.log
     LogLevel warn
     CustomLog ${APACHE_LOG_DIR}/access.log combined
-</VirtualHost>
-"
+</VirtualHost>"
 </code>
 </pre>
 
