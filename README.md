@@ -90,15 +90,30 @@
 
 
 <h3>Deploying Application</h3>
-<p>........... </p>
-<code>.........</code>
+<p>To host our application we will use <b>Virtualenv</b> and <b>Apache2</b></p>
+<ul>
+<li><p>Installing all packages</p></li>
+<code>sudo apt-get install libapache2-mod-wsgi python-dev</code>
+<code>sudo apt-get install apache2</code>
+</ul>
+<p>Once installed, Enable mod_wsgi</p>
+<code>sudo a2enmod wsgi</code>
+<p>Now you can start the webserver</p>
+<code>sudo service apache2 start</code>
+<p>Now go to the public ip your application is hosted on and you should see an Apache2 Ubuntu Default Page that says It works!</p>
+
+
+<h3>Install Git To Clone Application</h3>
+<p>You will need to check to see if Git is installed</p>
+<code>which git</code>
+<p>If git is not installed run the following command</p>
+<code>sudo apt-get install git</clone>
+
+
 
 
 <h3>Setting Up PostgreSQL Database</h3>
-<p>........... </p>
-<pre>
-<code>.........</code>
-</pre>
+
 
 
 <h3>References</h3>
