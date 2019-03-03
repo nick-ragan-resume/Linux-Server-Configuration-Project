@@ -103,11 +103,21 @@
 </ul>
 
 <h3>Install Git To Clone Application</h3>
+<ul>
 <li><p>You will need to check to see if Git is installed</p></li>
 <code>which git</code>
 <li><p>If git is not installed run the following command</p></li>
-<code>sudo apt-get install git</clone>
-
+<code>sudo apt-get install git</code>
+<li><p>Clone your app in the following directory <code>cd /var/www/catalog<p></li>
+<li><p>Steps to do this</p></li>
+<code>cd /var/www</code>
+<code>sudo mkdir catalog</code>
+<li><p>Give user <b>grader</b> permissions to this directory</p></li>  
+<code>sudo chown -R grader:grader catalog</code>
+<li><p>Now clone your app from GitHub</p></li>
+<code>git clone (clone url link) catalog</code>
+<li><p>Your directory should look like this after cloning<code>/var/www/catalog/catalog</code></p></li>  
+</ul>
 
 
 
