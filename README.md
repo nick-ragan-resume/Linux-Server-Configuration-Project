@@ -39,6 +39,11 @@
 <ul>
 <li><p>This key should be stored in the following directory <code>Users/ragan/.ssh/authorized_keys</code> on your local machine</p></li>
 <li><p>We need to copy the private key from the <b>local machine</b> to your user <b>grader</b> on the digital ocean server by running <code>ssh-copy-id grader@(your_public_ip_digital_ocean)</code></p></li>
+<li><p>Set Permissions both .ssh file locations</p></li>
+<pre>
+<code>chmod 700 .ssh</code>
+<code>chmod 644 .ssh/authorized_keys</code>
+</pre>
 <li><p>You can now log in as the user <b>grader</b> from your local machine</p></li>
 </ul>
 <pre>
@@ -55,8 +60,6 @@
 <p><code>sudo apt-get update</code></p>
 
 <p><code>sudo apt-get upgrade</code></p>
-
-
 
 
 
@@ -77,9 +80,10 @@
 </ul>
 <code>sudo nanno /etc/ssh/sshd_config</code>
 <p>Find and disable the following lines by setting to no</p>
+<pre>
 <code>PermitRootLogin no</code>
 <code>PasswordAuthentication no</code>
-
+</pre>
 
 
 <h3>Securing Server & Configuring Firewall</h3>
