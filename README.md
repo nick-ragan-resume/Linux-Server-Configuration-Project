@@ -79,15 +79,15 @@
 <ul>
 <li><p>Log in as the user <b>grader</b></p></li></ul>
 <p>Perform the steps below in order</p>
-<pre>
-<p><code>sudo ufw app list</code></p>
+
+<code>sudo ufw app list</code><p>Lists out profiles to further explore their profile definitions</p>
 <code>sudo ufw allow OpenSSH</code><p> Allows open SSH connection</p>
 <code>sudo ufw allow 2200</code><p> Allows connection to port 2200</p>
 <code>sudo ufw allow 2200/tcp</code><p> Allows <a href="https://stackoverflow.com/questions/8156254/tcp-vs-udp-what-is-a-tcp-connection"><b>Transmission Control Protocol</b></a> on port 2200</p>
 <code>sudo ufw allow 80/tcp</code><p> Allows <b>http</b> connection on port 80</p>
 <code>sudo ufw allow 123/udp</code><p> Allows <a href="https://www.auditmypc.com/udp-port-123.asp"><b>Network time protocol</b></a> on port 123</p>
 <code>sudo ufw enable</code><p> Enables firewall! Make sure your settings are correct first!</p>
-</pre>
+
 
 
 <h3>Deploying Application</h3>
