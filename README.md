@@ -43,6 +43,7 @@
 </ul>
 <pre>
 <code>ssh grader@(your_public_ip_digital_ocean)</code></p></li>
+</pre>
 
 
 
