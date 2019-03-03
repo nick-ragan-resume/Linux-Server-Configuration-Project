@@ -77,10 +77,10 @@
 
 <h3>Securing Server & Configuring Firewall</h3>
 <ul>
-<li><p>Log in as the user <b>grader</b></p></li></ul>
-<p>Perform the steps below in order</p>
-
-<code>sudo ufw app list</code><p>Lists out profiles to further explore their profile definitions</p>
+<li><p>Log in as the user <b>grader</b></p></li>
+<li><p>Perform the steps below in order</p></li>
+</ul>
+<code>sudo ufw app list</code><p> Lists out profiles to further explore their profile definitions</p>
 <code>sudo ufw allow OpenSSH</code><p> Allows open SSH connection</p>
 <code>sudo ufw allow 2200</code><p> Allows connection to port 2200</p>
 <code>sudo ufw allow 2200/tcp</code><p> Allows <a href="https://stackoverflow.com/questions/8156254/tcp-vs-udp-what-is-a-tcp-connection"><b>Transmission Control Protocol</b></a> on port 2200</p>
