@@ -131,7 +131,7 @@
 <code>application.secret_key = 'supersecretkey'</code>
 </pre>
 <li><p>Rename your <code>application.py</code> to <code>__init__.py</code></p></li>
-<li><p>Change the <code>client_secrets.json</code> directory in the <code>__init__.py</code> file to <code>/var/www/catlog/catlog/client_secrets.json</code> and change the port your application is running on to <code>app.run(host='0.0.0.0', port=2200)</code></p></li>
+<li><p>Change the <code>client_secrets.json</code> directory in the <code>__init__.py</code> file to <code>/var/www/catlog/catlog/client_secrets.json</code> and change the port your application is running on to <code>app.run(host='0.0.0.0', port=80)</code></p></li>
 <li><p>Now we will need to install the virtual machine <b>Virtualenv</b></p></li>
 <p><code>sudo pip install virtualenv</code></p>
 <p><code>sudo virtualenv venv</code></p>
@@ -142,7 +142,7 @@
 <p><code>sudo nano /etc/apache2/sites-available/catalog.conf</code></p>
 <pre>
 <code>
-</VirtualHost *:80/>
+<<VirtualHost *:80>VirtualHost *:80>
    ServerName [Your Public Ip or Domain]
    ServerAdmin admin@[Your Public Ip or Domain]
    WSGIDaemonProcess catalog python-path=/var/www/catalog:/var/www/catalog/venv/lib/python2.7/site-packages
@@ -160,11 +160,9 @@
     ErrorLog ${APACHE_LOG_DIR}/error.log
     LogLevel warn
     CustomLog ${APACHE_LOG_DIR}/access.log combined
-<//VirtualHost/>
+<</VirtualHost>VirtualHost>
 </code>
 </pre>
-
-
 </ul>
 
 
