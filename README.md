@@ -66,7 +66,7 @@
 <ul>
 <li><p>These settings will be in the sshd_config file also<p></li>
 <code>sudo nanno /etc/ssh/sshd_config</code>
-<p>Find and disable the following lines by setting to no</p>
+<li><p>Find and disable the following lines by setting to no</p></li>
 <code>PermitRootLogin no</code>
 <code>PasswordAuthentication no</code>
 </ul>
