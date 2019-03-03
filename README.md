@@ -17,27 +17,22 @@
 <li>Click on console</li>
 <li>Login to server with username/password sent to your email associated with your digital ocean accout</li>
 <p>--Above step will log you in as the root user. We will want to create at least one new user named <b>grader</b>. See below--
-<li><pre>
+<pre>
 <code>sudo adduser grader</code>
-</pre></li>
+</pre>
 <li><p>Create password for user <b>grader</b> This other information is not needed to create user.</p></li>
   <li><p>As <b>root</b> user give user <b>grader</b> sudo permission <pre><code>visudo</code></pre>
 </ul>
 
 
-<h3>Assigning Sudo Permission To grader</h3>
-<p>........... </p>
-<pre>
-<code>.........</code>
-</pre>
-
 
 <h3>SSH Key Authentication</h3>
-<p>........... </p>
+<li><p>From terminal on local machine type:</p></li>
 <pre>
-<code>.........</code>
+<code>ssh-keygen</code>
 </pre>
-
+<li><p>This key should be stored in the following directory <code>Users/ragan/.ssh/authorized_keys</code> on your local machine</p></li>
+<li><p>We need to copy the private key from the <b>local machine</b> to your user <b>grader</b> on the digital ocean server by running <code>ssh-copy-id grader@<your_public_ip_digital_ocean></code></li>
 
 <h3>Changing SSH Port To 2200</h3>
 <p>........... </p>
