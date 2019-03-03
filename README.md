@@ -241,3 +241,12 @@ ns3.digitalocean.com
 
 </br></br>
 <h3>References</h3>
+<ul>
+<li><p><a href="https://www.digitalocean.com/">Digital Ocean</a></p></li>
+<li><p><a href="https://www.digitalocean.com/community/tutorials/how-to-create-a-sudo-user-on-ubuntu-quickstart">How To Create a Sudo User On Ubuntu</a></p></li>
+<li><p><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2">How To Set Up SSH Keys</a></p></li>
+<li><p><a href="https://www.digitalocean.com/community/questions/set-root-password-in-sshd_config-file">Set Root Password in sshd_config file</a></p></li>
+<li><p><a href="https://stackoverflow.com/questions/53210568/i-have-error-secure-apache-on-digital-ocean">Securing Apache Server</a></p></li>
+<li><p><a href="https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps">How To Deploy a Flask Application On An Ubuntu VPS</a></p></li>
+<li><p><a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-16-04">How To Install & Use PostgreSQL On Ubuntu 16.04</a></p></li>
+</ul>
