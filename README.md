@@ -42,7 +42,7 @@
 <li><p>You can now log in as the user <b>grader</b> from your local machine</p></li>
 </ul>
 <pre>
-<code>ssh grader@(your_public_ip_digital_ocean)</code></p></li>
+<code>ssh grader@(your_public_ip_digital_ocean)</code>
 </pre>
 
 
@@ -52,12 +52,10 @@
 <ul>
 <li><p>As user <b>grader</b> run the following commands</p></li>
 </ul>
-<pre>
-<code>sudo apt-get update</code>
-</pre>
-<pre>
-<code>sudo apt-get upgrade</code>
-</pre>
+<p><code>sudo apt-get update</code></p>
+
+<p><code>sudo apt-get upgrade</code></p>
+
 
 
 
@@ -81,6 +79,7 @@
 <li>
 <p>Log in as the user <b>grader</b></p>
 </li>
+</ul>
 <p>Perform the steps below in order</p>
 <pre>
 <code>sudo ufw app list</code>
