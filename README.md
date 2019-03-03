@@ -141,11 +141,11 @@
 <li><p>Enable the virtual host</p></li>
 <p><code>sudo nano /etc/apache2/sites-available/catalog.conf</code></p>
 <pre>
-<code>"<VirtualHost *:80>
-    ServerName [YOUR PUBLIC IP ADDRESS]
-    ServerAlias [YOUR AMAZON LIGHTSAIL HOST NAME]
-    ServerAdmin admin@35.167.27.204
-    WSGIDaemonProcess catalog python-path=/var/www/catalog:/var/www/catalog/venv/lib/python2.7/site-packages
+<code>
+</VirtualHost *:80/>
+   ServerName [Your Public Ip or Domain]
+   ServerAdmin admin@[Your Public Ip or Domain]
+   WSGIDaemonProcess catalog python-path=/var/www/catalog:/var/www/catalog/venv/lib/python2.7/site-packages
     WSGIProcessGroup catalog
     WSGIScriptAlias / /var/www/catalog/catalog.wsgi
     <Directory /var/www/catalog/catalog/>
@@ -160,7 +160,7 @@
     ErrorLog ${APACHE_LOG_DIR}/error.log
     LogLevel warn
     CustomLog ${APACHE_LOG_DIR}/access.log combined
-</VirtualHost>"
+<//VirtualHost/>
 </code>
 </pre>
 
