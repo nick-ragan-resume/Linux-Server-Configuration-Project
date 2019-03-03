@@ -17,14 +17,12 @@
 <li>Click on console</li>
 <li>Login to server with username/password sent to your email associated with your digital ocean accout</li>
 <p>--Above step will log you in as the root user. We will want to create at least one new user named <b>grader</b>. See below--
-<pre>
 <code>sudo adduser grader</code>
-</pre>
 </ul>
 <ul>
 <li><p>Create password for user <b>grader</b> This other information is not needed to create user.</p></li>
 <li><p>As <b>root</b> user give user <b>grader</b> sudo permission </li>
-<pre><code>visudo</code></pre>
+<code>visudo</code>
 </ul>
 
 
