@@ -131,12 +131,40 @@
 <code>application.secret_key = 'supersecretkey'</code>
 </pre>
 <li><p>Rename your <code>application.py</code> to <code>__init__.py</code></p></li>
+<li><p>Change the <code>client_secrets.json</code> directory in the <code>__init__.py</code> file to <code>/var/www/catlog/catlog/client_secrets.json</code> and change the port your application is running on to <code>app.run(host='0.0.0.0', port=2200)</code></p></li>
 <li><p>Now we will need to install the virtual machine <b>Virtualenv</b></p></li>
 <p><code>sudo pip install virtualenv</code></p>
 <p><code>sudo virtualenv venv</code></p>
 <p><code>source venv/bin/activate</code></p>
 <p><code>sudo chmod -R 777 venv</code></p>
 <li><p>Once activated <code>(venv)</code> should appear infront of your username on the command line</p></li>
+<li><p>Enable the virtual host</p></li>
+<p><code>sudo nano /etc/apache2/sites-available/catalog.conf</code></p>
+<pre>
+<code>
+<VirtualHost *:80>
+    ServerName [YOUR PUBLIC IP ADDRESS]
+    ServerAlias [YOUR AMAZON LIGHTSAIL HOST NAME]
+    ServerAdmin admin@35.167.27.204
+    WSGIDaemonProcess catalog python-path=/var/www/catalog:/var/www/catalog/venv/lib/python2.7/site-packages
+    WSGIProcessGroup catalog
+    WSGIScriptAlias / /var/www/catalog/catalog.wsgi
+    <Directory /var/www/catalog/catalog/>
+        Order allow,deny
+        Allow from all
+    </Directory>
+    Alias /static /var/www/catalog/catalog/static
+    <Directory /var/www/catalog/catalog/static/>
+        Order allow,deny
+        Allow from all
+    </Directory>
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    LogLevel warn
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+</code>
+</pre>
+
 
 </ul>
 
