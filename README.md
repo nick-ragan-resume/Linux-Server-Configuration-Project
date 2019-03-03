@@ -211,7 +211,7 @@
 <p><code>sudo service apache2 restart</code></p>
 </ul>
 
-<h3>Changign DNS Host from DREAMHOST tO DIGITAL OCEAN</h3>
+<h3>Changign DNS Severs from DREAMHOST to DIGITAL OCEAN</h3>
 <ul>
 <li><p>Dream hosts DNS Servers are</p></li>
 <pre>
@@ -230,7 +230,7 @@ ns3.digitalocean.com
 </code>
 </prev>
 <li><p>Once finished it may take some time for the WHOIS records to update the server change</p></li>
-<li><p>Once updated, visit <a href="hiodevelopment.com">hiodevelopment.com</a> to see this application</p></li>
+<li><p>Once updated, visit <a href="http://hiodevelopment.com/">hiodevelopment.com</a> to see this application</p></li>
 </ul>
 
 </br></br>
