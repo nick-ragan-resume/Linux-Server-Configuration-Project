@@ -110,8 +110,8 @@
 <code>sudo apt-get install git</code>
 <li><p>Clone your app in the following directory <code>cd /var/www/catalog<p></li>
 <li><p>Steps to do this</p></li>
-<code>cd /var/www</code>
-<code>sudo mkdir catalog</code>
+<p><code>cd /var/www</code></p>
+<p><code>sudo mkdir catalog</code></p>
 <li><p>Give user <b>grader</b> permissions to this directory</p></li>  
 <code>sudo chown -R grader:grader catalog</code>
 <li><p>Now clone your app from GitHub</p></li>
