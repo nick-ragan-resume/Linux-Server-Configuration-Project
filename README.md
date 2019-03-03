@@ -100,6 +100,16 @@
 <li><p>Now you can start the webserver</p></li>
 <code>sudo service apache2 start</code>
 <li><p>Now go to the public ip your application is hosted on and you should see an Apache2 Ubuntu Default Page that says It works!</p></li>
+<li><p>Create a .wsgi file in the following directory <code>/var/www/catalog</code></p></li>
+<p><code>sudo nano catalog.wsgi</code></p>
+<pre>
+<code>import sys</code>
+<code>import logging</code>
+<code>logging.basicConfig(stream=sys.stderr)</code>
+</br>
+<code>from catalog import app as application</code>
+<code>application.secret_key = 'supersecretkey'
+  </pre>
 </ul>
 
 <h3>Install Git To Clone Application</h3>
@@ -116,10 +126,11 @@
 <code>sudo chown -R grader:grader catalog</code>
 <li><p>Now clone your app from GitHub</p></li>
 <code>git clone (clone url link) catalog</code>
-<li><p>Your directory should look like this after cloning<code>/var/www/catalog/catalog</code></p></li>  
+<li><p>Your directory should look like this after cloning <code>/var/www/catalog/catalog</code></p></li>  
 </ul>
 
 
+<h3>Install Virtual Environment</h3>
 
 <h3>Setting Up PostgreSQL Database</h3>
 
