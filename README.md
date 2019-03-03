@@ -9,7 +9,7 @@
 <li>Click Create</li>
 </ul>
 
-
+</br>
 <h3>Logging In & Creating User grader With Sudo Permission</h3>
 <p>Click on the newly create droplet</p>
 <ul>
@@ -26,7 +26,7 @@
 </ul>
 
 
-
+</br>
 <h3>SSH Key Authentication</h3>
 <ul>
 <li><p>From terminal on local machine type:</p></li>
@@ -43,7 +43,7 @@
 </ul>
 
 
-
+</br>
 <h3>Update & Upgrade All Packages</h3>
 <ul>
 <li><p>As user <b>grader</b> run the following commands</p></li>
@@ -52,7 +52,7 @@
 </ul>
 
 
-
+</br>
 <h3>Changing SSH Port To 2200</h3>
 <ul>
 <li><p>Edit the sshd_config file</p></li>
@@ -61,7 +61,7 @@
 </ul>
 
 
-
+</br>
 <h3>Disable Root Login & Password Authentication</h3>
 <ul>
 <li><p>These settings will be in the sshd_config file also<p></li>
@@ -74,7 +74,7 @@
 
 
 
-
+</br>
 <h3>Securing Server & Configuring Firewall</h3>
 <ul>
 <li><p>Log in as the user <b>grader</b></p></li>
@@ -89,7 +89,7 @@
 </ul>
 
 
-
+</br>
 <h3>Deploying Application</h3>
 <p>To host our application we will use <b>Virtualenv</b> and <b>Apache2</b></p>
 <ul>
@@ -114,7 +114,7 @@
 </ul>
 
 
-
+</br>
 <h3>Install Git To Clone Application</h3>
 <ul>
 <li><p>You will need to check to see if Git is installed</p></li>
@@ -133,10 +133,13 @@
 </ul>
 
 
+</br>
 <h3>Install Virtual Environment</h3>
 
+
+</br>
 <h3>Setting Up PostgreSQL Database</h3>
 
 
-
+</br>
 <h3>References</h3>
