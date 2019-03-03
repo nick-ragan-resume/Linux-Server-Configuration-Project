@@ -20,10 +20,11 @@
 <code>sudo adduser grader</code>
 </ul>
 <ul>
-<li><p>Create password for user <b>grader</b> This other information is not needed to create user.</p></li>
+<li><p>Create password for user <b>grader</b>, my password is <b>grader</b> This other information is not needed to create user.</p></li>
 <li><p>As <b>root</b> user give user <b>grader</b> sudo permission </li>
 <code>visudo</code>
 </ul>
+
 
 
 <h3>SSH Key Authentication</h3>
@@ -46,11 +47,10 @@
 <h3>Update & Upgrade All Packages</h3>
 <ul>
 <li><p>As user <b>grader</b> run the following commands</p></li>
-
 <p><code>sudo apt-get update</code></p>
-
 <p><code>sudo apt-get upgrade</code></p>
 </ul>
+
 
 
 <h3>Changing SSH Port To 2200</h3>
@@ -89,6 +89,7 @@
 </ul>
 
 
+
 <h3>Deploying Application</h3>
 <p>To host our application we will use <b>Virtualenv</b> and <b>Apache2</b></p>
 <ul>
@@ -111,6 +112,8 @@
 <code>application.secret_key = 'supersecretkey'
   </pre>
 </ul>
+
+
 
 <h3>Install Git To Clone Application</h3>
 <ul>
