@@ -32,7 +32,7 @@
 <code>ssh-keygen</code>
 </pre>
 <li><p>This key should be stored in the following directory <code>Users/ragan/.ssh/authorized_keys</code> on your local machine</p></li>
-<li><p>We need to copy the private key from the <b>local machine</b> to your user <b>grader</b> on the digital ocean server by running <code>ssh-copy-id grader@<your_public_ip_digital_ocean></code></li>
+<li><p>We need to copy the private key from the <b>local machine</b> to your user <b>grader</b> on the digital ocean server by running <code>ssh-copy-id grader@<your_public_ip_digital_ocean></code></p></li>
 
 <h3>Changing SSH Port To 2200</h3>
 <p>........... </p>
