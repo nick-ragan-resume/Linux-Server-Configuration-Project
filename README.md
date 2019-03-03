@@ -76,10 +76,7 @@
 
 <h3>Securing Server & Configuring Firewall</h3>
 <ul>
-<li>
-<p>Log in as the user <b>grader</b></p>
-</li>
-</ul>
+<li><p>Log in as the user <b>grader</b></p></li></ul>
 <p>Perform the steps below in order</p>
 <pre>
 <code>sudo ufw app list</code>
