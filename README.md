@@ -23,9 +23,9 @@
 </pre>
 <ul>
    <li><p>Create password for user <b>grader</b> This other information is not needed to create user.</p></li>
-   <li><p>As <b>root</b> user give user <b>grader</b> sudo permission <pre><code>visudo</code></pre></li>
+   <li><p>As <b>root</b> user give user <b>grader</b> sudo permission </li>
 </ul>
-
+<pre><code>visudo</code></pre>
 
 
 
@@ -42,24 +42,30 @@
 </ul>
 
 <h3>Changing SSH Port To 2200</h3>
-<p>........... </p>
+<ul>
+  <li><p>Edit the sshd_config file</p></li>
+  </ul>
 <pre>
-<code>.........</code>
+<code>sudo nano /etc/ssh/sshd_config</code>
 </pre>
+<ul>
+  <li><p>Change <b>#Port 22</b> to <b>Port 2200</b></p></li>
+
 
 
 <h3>Securing Server & Configuring Firewall</h3>
 <ul>
   <li>
-    <p>Logged in as the user <b>grader</b></p>
+    <p>Log in as the user <b>grader</b></p>
   </li>
+  <p>Perform the steps below in order</p>
   <pre>
      <code>sudo ufw app list</code>
      <code>sudo ufw allow OpenSSH</code><p> Allows open SSH connection</p>
      <code>sudo ufw allow 2200</code><p> Allows connection to port 2200</p>
-     <code>sudo ufw allow 2200/tcp</code><p> Allows tcp connection to port 2200</p>
-     <code>sudo ufw allow 80/tcp</code><p> Allows tcp connection to port 80</p>
-     <code>sudo ufw allow 123/udp</code><p> Allows http connection to port 123</p>
+     <code>sudo ufw allow 2200/tcp</code><p> Allows <a href="https://stackoverflow.com/questions/8156254/tcp-vs-udp-what-is-a-tcp-connection"><b>Transmission Control Protocol</b></a> on port 2200</p>
+     <code>sudo ufw allow 80/tcp</code><p> Allows <b>http</b> connection on port 80</p>
+     <code>sudo ufw allow 123/udp</code><p> Allows <a href="https://www.auditmypc.com/udp-port-123.asp"><b>Network time protocol</b>/a> on port 123</p>
      <code>sudo ufw enable</code><p> Enables firewall! Make sure your settings are correct first!</p>
   </pre>
 
