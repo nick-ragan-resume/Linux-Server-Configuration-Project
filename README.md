@@ -1,4 +1,4 @@
-# Udacity-Linux-Server-Configuration-Project
+# Linux-Server-Configuration-Project_Udacity
 
 <h3>Digital Ocean Server Set Up</h3>
 <p>Link to digital ocean https://www.digitalocean.com/</p>
