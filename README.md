@@ -234,4 +234,10 @@ ns3.digitalocean.com
 </ul>
 
 </br></br>
+<h3>Specific Information Requested</h3>
+<ul>
+<li><p>URL that the app runs on <code>http://hiodevelopment.com/</code></p></li>
+<li><p>Summary of software and configurations are listed throughout README.md</p></li>
+
+</br></br>
 <h3>References</h3>
