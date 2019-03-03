@@ -145,8 +145,18 @@
 
 
 </br></br>
-<h3>Install Virtual Environment</h3>
-
+<h3>Install All Remaining Packages Required</h3>
+<pre>
+<code>sudo pip install Flask</code>
+<code>sudo pip install sqlalchemy</code>
+<code>sudo pip install Flask-SQLAlchemy</code>
+<code>sudo pip install psycopg2</code>
+<code>sudo apt-get install python-psycopg2</code>
+<code>sudo pip install flask-seasurf</code>
+<code>sudo pip install oauth2client</code>
+<code>sudo pip install oauth2client</code>
+<code>sudo pip install oauth2client</code>
+</pre>
 
 </br></br>
 <h3>Setting Up PostgreSQL Database</h3>
