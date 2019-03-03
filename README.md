@@ -142,6 +142,7 @@
 <p><code>sudo nano /etc/apache2/sites-available/catalog.conf</code></p>
 <pre>
 <code>
+"
 <VirtualHost *:80>
     ServerName [YOUR PUBLIC IP ADDRESS]
     ServerAlias [YOUR AMAZON LIGHTSAIL HOST NAME]
@@ -162,6 +163,7 @@
     LogLevel warn
     CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
+"
 </code>
 </pre>
 
